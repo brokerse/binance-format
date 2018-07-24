@@ -38,5 +38,3 @@ function format(value) {
 }
 
 module.exports = format;
-
-

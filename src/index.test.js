@@ -1,13 +1,13 @@
 const format = require('../src');
 
-describe("should format the ETH BTC value for ETH/BTC", () => {
-    const symbol = format(ETHBTC);
-    symbol.expect("ETH/BTC");
+describe("should format the ETHBTC value for ETH/BTC", () => {
+    expect(format("ETHBTC")).toBe("BTC/USDT");
 });
 
+describe("should format the BTCUSDT value for BTC/USDT", () => {
+    expect(format("BTCUSDT")).toBe("BTC/USDT");
+});
 
-// const test1 = format("ETHBTC");
-// const test2 = format("BTCUSDT");
-// const test3 = format("ETHCLOAK");
-
-// console.log(test1, test2, test3);
+describe("should format the ETHCLOAK value for ETH/CLOAK", () => {
+    expect(format("ETHCLOAK")).toBe("ETH/CLOAK");
+});

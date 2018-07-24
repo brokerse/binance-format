@@ -37,12 +37,6 @@ function format(value) {
     }
 }
 
-const test1 = format("ETHBTC");
-const test2 = format("BTCUSDT");
-const test3 = format("ETHCLOAK");
-
-console.log(test1, test2, test3);
-
 module.exports = format;
 
 

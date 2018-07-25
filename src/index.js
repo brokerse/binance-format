@@ -13,10 +13,13 @@ function formatWithFourLetters(value) {
 
 function formatWithFiveLetters(value) {
     const initialValue = value.substring(0, 5);
+    const endValue = value.substring(5, 0);
 
     return symbolListWithFourLetters.includes(initialValue)
         ? `${initialValue}/${value.substring(5)}`
-        : `${value.substring(0, 3)}/${value.substring(3)}`;
+        : symbolListWithFiveLetters.includes(endValue) 
+            ? `${value.substring(0, 5)}/${value.substring(5)}`
+            : `${value.substring(0, 3)}/${value.substring(3)}`; 
 }
 
 

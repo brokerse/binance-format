@@ -1,4 +1,4 @@
-const format = require('../src');
+const format = require('../format');
 
 test("should format the ETHBTC value for ETH/BTC", () => {
     expect(format("ETHBTC")).toBe("ETH/BTC");

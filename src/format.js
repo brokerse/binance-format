@@ -20,7 +20,6 @@ function formatWithFiveLetters(value) {
             : `${value.substring(0, 3)}/${value.substring(3)}`; 
 }
 
-
 function format(value) {
     if (typeof value !== 'string') {
         throw new Error("Report type error valid string");

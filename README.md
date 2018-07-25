@@ -26,7 +26,32 @@ yarn add @clubinvestbr/format
 ```
 
 #### Getting started
+
+##### Format
 ```javascript
+const { format } = require('@clubinvestbr/binance-format');
+
 format("BTCETH");
 // "BTC/ETH"
+
+format("BTCUSDT");
+// "BTC/USDT"
+
+format("BTCWAVES");
+// "BTC/WAVES"
+```
+
+##### Unformat
+
+```javascript
+const { unformat } = require('@clubinvestbr/binance-format');
+
+unformat("BTC/ETH");
+// "BTCETH"
+
+unformat("BTC/USDT");
+// "BTCUSDT"
+
+unformat("BTC/WAVES");
+// "BTCWAVES"
 ```

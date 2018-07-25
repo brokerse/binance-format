@@ -11,7 +11,8 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/996757cec66542c0a64fca2b4cf8a936)](https://www.codacy.com/app/dmzoneill/node-binance-api?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=clubinvest/binance-format&amp;utm_campaign=Badge_Grade)
 
 # Node Binance API
-This project is designed to help you make your own projects that interact with the [Binance API](https://github.com/binance-exchange/binance-official-api-docs). You can stream candlestick chart data, market depth, or use other advanced features such as setting stop losses and iceberg orders. This project seeks to have complete API coverage including WebSockets.
+This project was developed to assist in formatting the binance symbols to better represent values in both the backend and front end. No api is used to query and perform the formatting, it is purely done with string manipulation to have more performance and availability.
+
 
 #### Installation
 ```
@@ -20,5 +21,6 @@ npm install @clubinvestbr/format --save
 
 #### Getting started
 ```javascript
-
+format("BTCETH");
+// "BTC/ETH"
 ```

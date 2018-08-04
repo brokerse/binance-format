@@ -1,7 +1,7 @@
 {
     "name": "@clubinvestbr/binance-format",
     "description": "Put mask for the symbols similar to the one in binance \"ETH/BTC\"",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "author": "Rodrigo Oler <https://github.com/rodrigooler>",
     "bugs": {
         "url": "https://github.com/clubinvest/binance-format/issues"

@@ -33,7 +33,7 @@ function format(value) {
         case 8:
             return formatWithFiveLetters(value);
         default:
-        //return throw new Error("Invalid symbol, enter a valid symbol to perform the formatting");
+            return value;
     }
 }
 

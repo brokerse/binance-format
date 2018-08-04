@@ -45,20 +45,20 @@ const icoListTwo = [
 ];
 
 function formatWithFourLetters(value) {
-    const initialValue = value.substring(0, 4);
+    const baseAsset = value.substring(0, 4);
 
-    return icoListOne.includes(initialValue)
-        ? `${initialValue}/${value.substring(4)}`
+    return icoListOne.includes(baseAsset)
+        ? `${baseAsset}/${value.substring(4)}`
         : `${value.substring(0, 3)}/${value.substring(3)}`;
 }
 
 function formatWithFiveLetters(value) {
-    const initialValue = value.substring(0, 5);
-    const endValue = value.substring(5, 0);
+    const baseAsset = value.substring(0, 5);
+    const quoteAsset = value.substring(5, 0);
 
-    return icoListOne.includes(initialValue)
-        ? `${initialValue}/${value.substring(5)}`
-        : icoListTwo.includes(endValue) 
+    return icoListOne.includes(baseAsset)
+        ? `${baseAsset}/${value.substring(5)}`
+        : icoListTwo.includes(quoteAsset) 
             ? `${value.substring(0, 5)}/${value.substring(5)}`
             : `${value.substring(0, 3)}/${value.substring(3)}`; 
 }

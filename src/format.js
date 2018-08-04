@@ -1,10 +1,53 @@
-const symbolListWithFourLetters = require('./jsons/symbolListWithFourLetters');
-const symbolListWithFiveLetters = require('./jsons/symbolListWithFiveLetters');
+const icoListOne = [
+    "AION",
+    "APPC",
+    "ARDR",
+    "BCPT",
+    "CHAT",
+    "DASH",
+    "DATA",
+    "DENT",
+    "FUEL",
+    "IOST",
+    "IOTA",
+    "IOTX",
+    "LEND",
+    "LINK",
+    "LOOM",
+    "MANA",
+    "NANO",
+    "NEBL",
+    "NPXS",
+    "NULS",
+    "PIVX",
+    "POWR",
+    "SALT",
+    "TRIG",
+    "TUSD",
+    "USDT",
+    "VIBE",
+    "WABI", 
+    "YOYO"
+];
+
+const icoListTwo = [
+    "CLOAK",
+    "NCASH",
+    "SNGLS",
+    "STEEM",
+    "STORJ",
+    "STORM",
+    "STRAT",
+    "THETA",
+    "TUSDU",
+    "WAVES",
+    "WINGS"
+];
 
 function formatWithFourLetters(value) {
     const initialValue = value.substring(0, 4);
 
-    return symbolListWithFourLetters.includes(initialValue)
+    return icoListOne.includes(initialValue)
         ? `${initialValue}/${value.substring(4)}`
         : `${value.substring(0, 3)}/${value.substring(3)}`;
 }
@@ -13,9 +56,9 @@ function formatWithFiveLetters(value) {
     const initialValue = value.substring(0, 5);
     const endValue = value.substring(5, 0);
 
-    return symbolListWithFourLetters.includes(initialValue)
+    return icoListOne.includes(initialValue)
         ? `${initialValue}/${value.substring(5)}`
-        : symbolListWithFiveLetters.includes(endValue) 
+        : icoListTwo.includes(endValue) 
             ? `${value.substring(0, 5)}/${value.substring(5)}`
             : `${value.substring(0, 3)}/${value.substring(3)}`; 
 }
@@ -24,6 +67,16 @@ function format(value) {
     if (typeof value !== 'string') {
         throw new Error("Report type error valid string");
     }
+
+    AEBTC
+    SCBTC 
+    AEBNB 
+    
+    QTUMUSDT
+    TUSDUSDT
+    IOTAUSDT
+
+
 
     switch (value.length) {
         case 6:

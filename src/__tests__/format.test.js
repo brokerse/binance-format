@@ -1,5 +1,17 @@
 const format = require('../format');
 
+test("should format the AEBTC value for AE/BTC", () => {
+    expect(format("AEBTC")).toBe("AE/BTC");
+});
+
+test("should format the SCBTC value for SC/BTC", () => {
+    expect(format("SCBTC")).toBe("SC/BTC");
+});
+
+test("should format the ETHBTC value for ETH/BTC", () => {
+    expect(format("ETHBTC")).toBe("ETH/BTC");
+});
+
 test("should format the ETHBTC value for ETH/BTC", () => {
     expect(format("ETHBTC")).toBe("ETH/BTC");
 });

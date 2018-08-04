@@ -44,6 +44,16 @@ const icoListTwo = [
     "WINGS"
 ];
 
+// const icoListThree = [
+//     QTUM
+//     TUSD
+//     IOTA
+// ];
+
+function formatWithTwoLetters(value) {
+    return `${value.substring(0, 2)}/${value.substring(2)}`
+}
+
 function formatWithFourLetters(value) {
     const baseAsset = value.substring(0, 4);
 
@@ -68,17 +78,9 @@ function format(value) {
         throw new Error("Report type error valid string");
     }
 
-    AEBTC
-    SCBTC 
-    AEBNB 
-    
-    QTUMUSDT
-    TUSDUSDT
-    IOTAUSDT
-
-
-
     switch (value.length) {
+        case 5: 
+            return formatWithTwoLetters(value);
         case 6:
             return `${value.substring(0, 3)}/${value.substring(3)}`;
         case 7:

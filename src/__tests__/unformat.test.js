@@ -1,5 +1,13 @@
 const unformat = require('../unformat');
 
+test("should format the AE/BTC value for AEBTC", () => {
+    expect(unformat("AE/BTC")).toBe("AEBTC");
+});
+
+test("should format the SC/BTC value for SCBTC", () => {
+    expect(unformat("SC/BTC")).toBe("SCBTC");
+});
+
 test("should unformat the ETH/BTC value for ETHBTC", () => {
     expect(unformat("ETH/BTC")).toBe("ETHBTC");
 });

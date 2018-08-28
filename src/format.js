@@ -26,8 +26,9 @@ const icoListOne = [
     "TUSD",
     "USDT",
     "VIBE",
-    "WABI", 
-    "YOYO"
+    "WABI",
+    "YOYO",
+    "QTUM"
 ];
 
 const icoListTwo = [
@@ -39,19 +40,12 @@ const icoListTwo = [
     "STORM",
     "STRAT",
     "THETA",
-    "TUSDU",
     "WAVES",
     "WINGS"
 ];
 
-// const icoListThree = [
-//     QTUM
-//     TUSD
-//     IOTA
-// ];
-
 function formatWithTwoLetters(value) {
-    return `${value.substring(0, 2)}/${value.substring(2)}`
+    return `${value.substring(0, 2)}/${value.substring(2)}`;
 }
 
 function formatWithFourLetters(value) {
@@ -68,18 +62,18 @@ function formatWithFiveLetters(value) {
 
     return icoListOne.includes(baseAsset)
         ? `${baseAsset}/${value.substring(5)}`
-        : icoListTwo.includes(quoteAsset) 
+        : icoListTwo.includes(quoteAsset)
             ? `${value.substring(0, 5)}/${value.substring(5)}`
-            : `${value.substring(0, 3)}/${value.substring(3)}`; 
+            : `${value.substring(0, 3)}/${value.substring(3)}`;
 }
 
 function format(value) {
-    if (typeof value !== 'string') {
+    if (typeof value !== "string") {
         throw new Error("Report type error valid string");
     }
 
     switch (value.length) {
-        case 5: 
+        case 5:
             return formatWithTwoLetters(value);
         case 6:
             return `${value.substring(0, 3)}/${value.substring(3)}`;

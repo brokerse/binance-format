@@ -44,6 +44,15 @@ const icoListTwo = [
     "WINGS"
 ];
 
+<<<<<<< HEAD
+=======
+const icoListFour = [
+    "QTUM",
+    "TUSD",
+    "IOTA"
+];
+
+>>>>>>> 7b639d9ab46be8429546783fb960d2498e9e1cdd
 function formatWithTwoLetters(value) {
     return `${value.substring(0, 2)}/${value.substring(2)}`;
 }
@@ -80,6 +89,9 @@ function format(value) {
         case 7:
             return formatWithFourLetters(value);
         case 8:
+            const ignore = icoListFour.filter( ico => value.includes(ico))
+            if (ignore.length > 0)
+                return `${value.substring(0,4)}/${value.substring(4)}`
             return formatWithFiveLetters(value);
         default:
             return value;

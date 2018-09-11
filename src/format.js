@@ -44,15 +44,12 @@ const icoListTwo = [
     "WINGS"
 ];
 
-<<<<<<< HEAD
-=======
 const icoListFour = [
     "QTUM",
     "TUSD",
     "IOTA"
 ];
 
->>>>>>> 7b639d9ab46be8429546783fb960d2498e9e1cdd
 function formatWithTwoLetters(value) {
     return `${value.substring(0, 2)}/${value.substring(2)}`;
 }

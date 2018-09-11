@@ -35,3 +35,15 @@ test("should format the USDTBTC value for USDT/BTC", () => {
 test("should format the CLOAKETH value for CLOAK/ETH", () => {
     expect(format("CLOAKETH")).toBe("CLOAK/ETH");
 });
+
+test("should format the QTUMUSDT value for QTUM/USDT", () => {
+    expect(format("QTUMUSDT")).toBe("QTUM/USDT");
+});
+
+test("should format the TUSDUSDT value for TUSD/USDT", () => {
+    expect(format("TUSDUSDT")).toBe("TUSD/USDT");
+});
+
+test("should format the IOTAUSDT value for IOTA/USDT", () => {
+    expect(format("IOTAUSDT")).toBe("IOTA/USDT");
+});

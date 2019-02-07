@@ -32,6 +32,7 @@ const icoListOne = [
 ];
 
 const icoListTwo = [
+    "BCHSV",
     "CLOAK",
     "NCASH",
     "SNGLS",
@@ -41,7 +42,7 @@ const icoListTwo = [
     "STRAT",
     "THETA",
     "WAVES",
-    "WINGS"
+    "WINGS",
 ];
 
 const icoListFour = [

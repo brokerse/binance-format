@@ -1,13 +1,13 @@
 {
     "name": "@clubinvestbr/binance-format",
     "description": "Put mask for the symbols similar to the one in binance \"ETH/BTC\"",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "author": "Rodrigo Oler <https://github.com/rodrigooler>",
     "bugs": {
         "url": "https://github.com/clubinvest/binance-format/issues"
     },
     "devDependencies": {
-        "jest": "^23.4.1"
+        "jest": "24.1.0"
     },
     "homepage": "https://github.com/clubinvest/binance-format#readme",
     "keywords": [

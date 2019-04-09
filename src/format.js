@@ -48,7 +48,8 @@ const icoListTwo = [
 const icoListFour = [
     "QTUM",
     "TUSD",
-    "IOTA"
+    "IOTA",
+    "MITH"
 ];
 
 function formatWithTwoLetters(value) {

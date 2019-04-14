@@ -29,6 +29,7 @@ const icoListOne = [
     'WABI',
     'YOYO',
     'QTUM',
+    'DOCK',
 ]
 
 const icoListTwo = [

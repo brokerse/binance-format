@@ -48,7 +48,7 @@ const icoListTwo = [
     "WINGS"
 ];
 
-const icoListFour = ["QTUM", "TUSD", "IOTA", "MITH", "DOCK", "POLY", "CELR"];
+const icoListFour = ["QTUM", "TUSD", "IOTA", "MITH", "DOCK", "POLY", "CELR", "DASH"];
 
 function formatWithTwoLetters(value) {
     return `${value.substring(0, 2)}/${value.substring(2)}`;

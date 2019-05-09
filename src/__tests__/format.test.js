@@ -51,3 +51,7 @@ test("should format the IOTAUSDT value for IOTA/USDT", () => {
 test("should format the BCHSVBTC value for BCHSV/BTC", () => {
     expect(format("BCHSVBTC")).toBe("BCHSV/BTC");
 });
+
+test("should format the DASHUSDT value for DASH/USDT", () => {
+    expect(format("DASHUSDT")).toBe("DASH/USDT");
+});

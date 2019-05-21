@@ -55,3 +55,19 @@ test("should format the BCHSVBTC value for BCHSV/BTC", () => {
 test("should format the DASHUSDT value for DASH/USDT", () => {
     expect(format("DASHUSDT")).toBe("DASH/USDT");
 });
+
+test("should format the WAVESBTC value for WAVES/BTC", () => {
+    expect(format("WAVESBTC")).toBe("WAVES/BTC");
+});
+
+test("should format the WAVESUSDT value for WAVES/USDT", () => {
+    expect(format("WAVESUSDT")).toBe("WAVES/USDT");
+});
+
+test("should format the ATOMBTC value for ATOM/BTC", () => {
+    expect(format("ATOMBTC")).toBe("ATOM/BTC");
+});
+
+test("should format the ATOMUSDT value for ATOM/USDT", () => {
+    expect(format("ATOMUSDT")).toBe("ATOM/USDT");
+});

@@ -31,7 +31,8 @@ const icoListOne = [
     "QTUM",
     "DOCK",
     "POLY",
-    "CELR"
+    "CELR",
+    "ATOM"
 ];
 
 const icoListTwo = [
@@ -45,10 +46,21 @@ const icoListTwo = [
     "STRAT",
     "THETA",
     "WAVES",
-    "WINGS"
+    "WINGS",
+    "MATIC"
 ];
 
-const icoListFour = ["QTUM", "TUSD", "IOTA", "MITH", "DOCK", "POLY", "CELR", "DASH"];
+const icoListFour = [
+    "QTUM",
+    "TUSD",
+    "IOTA",
+    "MITH",
+    "DOCK",
+    "POLY",
+    "CELR",
+    "DASH",
+    "ATOM"
+];
 
 function formatWithTwoLetters(value) {
     return `${value.substring(0, 2)}/${value.substring(2)}`;
@@ -90,6 +102,8 @@ function format(value) {
             if (ignore.length > 0)
                 return `${value.substring(0, 4)}/${value.substring(4)}`;
             return formatWithFiveLetters(value);
+        case 9:
+            return `${value.substring(0, 5)}/${value.substring(5)}`;
         default:
             return value;
     }

@@ -59,7 +59,8 @@ const icoListFour = [
     "POLY",
     "CELR",
     "DASH",
-    "ATOM"
+    "ATOM",
+    "LINK"
 ];
 
 function formatWithTwoLetters(value) {

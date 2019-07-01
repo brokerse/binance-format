@@ -32,7 +32,9 @@ const icoListOne = [
     "DOCK",
     "POLY",
     "CELR",
-    "ATOM"
+    "ATOM",
+    "ALGO",
+    "BTCB"
 ];
 
 const icoListTwo = [
@@ -60,7 +62,9 @@ const icoListFour = [
     "CELR",
     "DASH",
     "ATOM",
-    "LINK"
+    "LINK",
+    "ALGO",
+    "BTCB"
 ];
 
 function formatWithTwoLetters(value) {
